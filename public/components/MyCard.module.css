@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.container{
+    background-color: #ffffff;
+    border-radius: 1vh;
+    width: 30vw;
+    height: 75vh;
+    filter: drop-shadow(1vw 1vw 1vw rgba(0, 0, 0, 0.2));
+    outline: ridge 2vh #ffab45;
+}
+.top{
+    margin: 2vw 2vw 1vw 2vw;
+}
+.avatar_container{
+    float: left;
+}
+.avatar{
+    border-radius: 50%;
+    max-width: 12.5vw;
+    max-height: 12.5vw;
+}
+.title_container{
+    color: #000;
+    font-size: 7vh;
+    font-family: "Montserrat";
+    text-align: left;
+    padding-top: 6vh;
+    padding-left: 50%;
+    font-weight: bolder;
+}
+.firstName{
+    border-bottom: solid 1.5vh #ffa12e64;
+    line-height: 3.5vh;
+    width: 75%;
+}
+/* .firstName{
+    line-height: 5.5vh;
+} */
+.separator{
+    clear: both;
+    border-bottom: 0.4vh solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4vh;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 1vh;
+}
+.bottom{
+    margin: 0vw 1vw;
+    clear: both;
+    font-family: "Montserrat";
+    display: inline;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    
+}
+.bottom-text{
+    color: #000;
+    padding: 0.5vh 1vw;
+}
+.bottom-header{
+    padding: 1vh;
+    font-size: 2vh;
+    font-weight: 800;
+    
+}
+.bottom-desc{
+    font-size: 1.5vh;
+    padding: 0.5vh 3vw;
+    text-align: center;
+}
+.bottom-section{
+    /* margin-bottom: 1vh; */
+    padding: 0 1vw 0 1vw;
+    clear: both;
+}
+.bio{
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+}
+.bottom-desc-bio{
+    font-size: 1.75vh;
+    padding: 0.5vh 1vw;
+    text-align: center;
+}
+.my-icon{
+    font-size: 1.5vh !important;
+    color: black;
+    vertical-align: middle;
+    padding-right: 0.8vw;
+}
+.contact-box{
+    padding: 1.5vh 1vw;
+    display: inline;
+    background-color: #ffa12e3b;
+    border-radius: 1.2vh;
+    color: black;
+    font-size: 1.25vh;
+    margin-bottom: 2vh;
+}
+
+.slack{
+    float: left;
+}
+.mail{
+    float: right;
+}
+.mail:hover, .slack:hover{
+    transition: all 0.2s;
+    background-color: #ffa12ea6;
+}
+.header-icon{
+    color: #ffab45;
+    font-size: 3vh !important;
+    vertical-align: middle;
+    margin-right: 0.5vw;
+}
+.bottom-header-text{
+    vertical-align: middle;
+}
+.bio-list{
+    list-style-type: none;
+    text-align: left;
+}
+.list-elem{
+    display: inline-block;
+    margin: 0 0.5vw 0.5vh 0;
+    padding: 0.5vw;
+    color: #fff;
+    border-radius: 1vh;
+}
+.proj-list-elem{
+    background-color: #ffab45;
+}
+.tool-list-elem{
+    background-color: rgb(100, 145, 231);
+}

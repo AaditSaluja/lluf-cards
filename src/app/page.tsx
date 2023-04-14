@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Oswald } from 'next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+
+const inter = Oswald({ subsets: ['latin'] })
+
+export function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -87,5 +89,102 @@ export default function Home() {
         </a>
       </div>
     </main>
+  )
+}
+
+export default function Cards() {
+  return (
+
+  <main className={styles.main}>
+      <link rel="stylesheet" type="text/css" href="/components/MyCard.module.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+    <div className="container">
+      <div className="top">
+        <div className="avatar_container">
+          <Image
+                src="/avatar.png"
+                alt="Vercel Logo"
+                width={800}
+                height={800}
+                className="avatar"
+                priority
+              />
+        </div>
+        <div className="title_container">
+          
+          <p className="firstName">John</p>
+
+          <p className="lastName">Doe</p>
+        </div>
+        {/* <div className="separator"></div> */}
+      </div>
+      <div className="bottom">
+          <div className="bio bottom-section">
+          
+          {/* <div className='bottom-header bottom-text'>
+            <i className="material-icons header-icon" >stream</i>
+            <span className='bottom-header-text'>BIO</span>
+          </div> */}
+          <div className='bottom-desc-bio bottom-text'>I am a sophomore at the college studying AFVS. Design enthusiast who is learning to animate.</div>
+        </div>
+        {/* <div className="separator"></div> */}
+
+          <div className="contact bottom-section">
+            {/* <p className='bottom-header bottom-text'>CONTACT</p> */}
+            <div className='bottom-text'>
+              <a className='_' href='slackaccount@slack.com'>
+              <div className="slack contact-box">
+                <i className="material-icons my-icon" >fullscreen_exit</i>
+                {/* <span className='slack'></span> */}
+                @johndoe
+              </div>
+              </a>
+              <a className='_' href='mailto:johnjogndoe@gmail.com'>
+              <div className="mail contact-box">
+                <i className="material-icons my-icon" >mail</i>
+                johnjohnddoe@college.harvard.edu
+              </div>
+              </a>
+
+            </div>
+          </div>
+          
+          <div className="tools bottom-section">
+            <div className='bottom-header bottom-text'>
+              <i className="material-icons header-icon" >stream</i>
+              <span className='bottom-header-text'>Projects</span>
+            </div>
+            <div className='bottom-desc bottom-text'>
+              <ul className='bio-list proj-list'>
+                <a className='proj-link' href='proj_website'><li className='list-elem proj-list-elem'>Project Name</li></a>
+                <a className='proj-link' href='proj_website'><li className='list-elem proj-list-elem'>Supernova</li></a>
+                <a className='proj-link' href='proj_website'><li className='list-elem proj-list-elem'>Desk Model</li></a>
+                <a className='proj-link' href='proj_website'><li className='list-elem proj-list-elem'>Portraits</li></a>
+                <a className='proj-link' href='proj_website'><li className='list-elem proj-list-elem'>Buttons</li></a>
+              </ul>
+            </div>
+          </div>
+          <div className="projects bottom-section">
+            <div className='bottom-header bottom-text'>
+              <i className="material-icons header-icon" >stream</i>
+              <span className='bottom-header-text'>Tools</span>
+            </div>
+              <div className='bottom-desc bottom-text'>
+              <ul className='bio-list tool-list'>
+                <li className='list-elem tool-list-elem'>After Effects</li>
+                <li className='list-elem tool-list-elem'>xD</li>
+                <li className='list-elem tool-list-elem'>Blender</li>
+                <li className='list-elem tool-list-elem'>Illustrator</li>
+                <li className='list-elem tool-list-elem'>Unity</li>
+                <li className='list-elem tool-list-elem'>Garage Band</li>
+                <li className='list-elem tool-list-elem'>Photoshop</li>
+              </ul>
+            </div>
+            
+          </div>
+          
+        </div>
+    </div>
+  </main>
   )
 }
