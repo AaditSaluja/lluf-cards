@@ -22,7 +22,7 @@
 }
 .title_container{
     color: #000;
-    font-size: 7vh;
+    
     font-family: "Montserrat";
     text-align: left;
     padding-top: 6vh;
@@ -31,8 +31,12 @@
 }
 .firstName{
     border-bottom: solid 1.5vh #ffa12e64;
-    line-height: 3.5vh;
-    width: 75%;
+    line-height: 2.5vh;
+    font-size: 5vh;
+    width: 82%;
+}
+.lastName{
+    font-size: 3vh;
 }
 /* .firstName{
     line-height: 5.5vh;
@@ -126,7 +130,7 @@
 }
 .list-elem{
     display: inline-block;
-    margin: 0 0.5vw 0.5vh 0;
+    margin: 0 0.5vw 0.5vw 0;
     padding: 0.5vw;
     color: #fff;
     border-radius: 1vh;

@@ -112,9 +112,9 @@ export default function Cards() {
         </div>
         <div className="title_container">
           
-          <p className="firstName">John</p>
+          <p className="firstName">Victoria</p>
 
-          <p className="lastName">Doe</p>
+          <p className="lastName">Wijerathnayapa</p>
         </div>
         {/* <div className="separator"></div> */}
       </div>
@@ -136,13 +136,13 @@ export default function Cards() {
               <div className="slack contact-box">
                 <i className="material-icons my-icon" >fullscreen_exit</i>
                 {/* <span className='slack'></span> */}
-                @johndoe
+                @victoriawij
               </div>
               </a>
               <a className='_' href='mailto:johnjogndoe@gmail.com'>
               <div className="mail contact-box">
                 <i className="material-icons my-icon" >mail</i>
-                johnjohnddoe@college.harvard.edu
+                vwijerathnayapa@college.harvard.edu
               </div>
               </a>
 
